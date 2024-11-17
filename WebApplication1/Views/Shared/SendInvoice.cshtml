@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "إرسال الفاتورة";
+}
+
+<div style="text-align: center; margin-top: 50px;">
+    <h2 style="margin-bottom: 30px;">إرسال الفاتورة</h2>
+    <div style="display: inline-flex; gap: 20px;">
+        <form action="@Url.Action("SendInvoice", "Invoice")" method="post">
+            <button type="submit" class="btn btn-primary" style="font-size: 1.2em; padding: 15px 30px; background-color: #007bff; border-color: #007bff; border-radius: 10px;">إرسال الفاتورة شامل الضريبة</button>
+        </form>
+
+
+
+        @*
+                يقوم بالارسال الى الكنترولر الخاص ب غير شامل الضريبة
+                <form action="@Url.Action("SendInvoice2", "Invoice2")" method="post">
+                <button type="submit" class="btn btn-secondary" style="font-size: 1.2em; padding: 15px 30px; background-color: #007bff; border-color: #007bff; border-radius: 10px;">إرسال الفاتورة غير شامل الضريبة</button>
+            </form>*@
+
+
+
+        <form action="@Url.Action("ViewDashboard", "Dashboard")" method="post">
+            <button type="submit" class="btn btn-secondary" style="font-size: 1.2em; padding: 15px 30px; background-color: #007bff; border-color: #007bff; border-radius: 10px;">إرسال الفاتورة غير شامل الضريبة</button>
+        </form>
+    </div>
+</div>

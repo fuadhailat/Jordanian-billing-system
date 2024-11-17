@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null; // في حال لم تكن تريد استخدام Layout مشترك
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Input</title>
+</head>
+<body>
+    <h1>إدخال البيانات لإنشاء الفاتورة</h1>
+    <form method="post" action="/Dashboard/SubmitData">
+        <label for="taxNumber">رقم الضريبة:</label>
+        <input type="text" id="taxNumber" name="taxNumber" required><br><br>
+
+        <label for="incomeSequence">تسلسل مصدر الدخل:</label>
+        <input type="text" id="incomeSequence" name="incomeSequence" required><br><br>
+
+        <label for="userId">رقم المستخدم:</label>
+        <input type="text" id="userId" name="userId" required><br><br>
+
+        <label for="secretKey">المفتاح السري:</label>
+        <input type="text" id="secretKey" name="secretKey" required><br><br>
+
+        <button type="submit">إرسال البيانات</button>
+    </form>
+</body>
+</html>

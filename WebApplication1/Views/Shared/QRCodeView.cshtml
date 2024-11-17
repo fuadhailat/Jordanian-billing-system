@@ -1,0 +1,13 @@
+﻿@model string
+
+<div style="text-align: center; margin-top: 50px;">
+    <h2 style="margin-bottom: 20px;">QR Code</h2>
+    @if (!string.IsNullOrEmpty(Model))
+    {
+        <img src="data:image/png;base64,@Model" alt="QR Code" style="max-width: 100%; height: auto; margin-bottom: 20px;" />
+    }
+    else
+    {
+        <p>QR Code not available.</p>
+    }
+</div>
